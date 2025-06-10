@@ -1,0 +1,79 @@
+% === === ===
+% Extensions
+% === === ===
+
+% Set margins
+\usepackage[
+	a4paper,
+	top=2.5cm,
+	bottom=2.5cm,
+	left=3cm,
+	right=3cm
+]{geometry}
+
+% Font encoding & Font Style
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Dummy Texts
+\usepackage[english]{babel}  % required for blindtext
+\usepackage{blindtext}
+
+% Better text justification
+\usepackage{microtype}
+
+% Turn off additional space after a sentence
+\frenchspacing
+
+% Make hyperlinks and references clickable
+\usepackage[
+	colorlinks=true,
+	linkcolor=black,      % for table of contents & \ref
+	urlcolor=blue,        % for URL links
+	citecolor=blue        % for \cite
+]{hyperref}
+
+% Optional: Add spacing between paragraphs instead of indentation
+\KOMAoptions{parskip=half}
+
+% Optional: Slightly more readable line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Add Literature
+\usepackage[style=ieee, 
+		    backend=biber, 
+		    isbn=true,
+		    sortlocale=en_US]{biblatex}                  % Hyperlinks für Ziate]{biblatex}
+\addbibresource{research.bib}
+\setlength{\bibitemsep}{1em}     % Distance between the bib entries
+\setlength{\bibhang}{2em}        % Distance after a new bib page
+% Splitting URLs ib bib
+\defcounter{biburlnumpenalty}{10} % Penalty for splitting a number
+\defcounter{biburlucpenalty}{500}  % Penalty for capital letters
+\defcounter{biburllcpenalty}{500}  % Penalty for lower letters
+
+% For Images
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{placeins}
+
+% For Text borders/boxes
+\usepackage{tikz}
+\usepackage{varwidth} % for dynamic Boxes -> adjusted weight for itemlists
+
+% For tight item lists
+\usepackage{enumitem}
+
+
+% === === ===
+% General Book Information
+% === === ===
+\title{Data Science Project}
+\subtitle{Automatically task solving dominance by Manus AI}
+\author{Tobia Ippolito}
+\date{}
+
+
+
+
